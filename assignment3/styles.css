@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap'); /*headers and big text*/
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');/*body and small writing */
+
+/*basic css for the whole to use*/
+body {
+    font-family: "Fredoka", sans-serif;
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(90deg, lightblue, #FF3385);
+    color: #333;
+    text-align: center;
+}
+
+header {
+    background-color: #ff3385ea;
+    color: white;
+    padding: 20px;
+}
+
+header h1 {
+    font-family: "Luckiest Guy", cursive;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header img{
+    width: 200px;
+    height:auto;
+    float: left;
+    z-index: 10;
+}
+
+h2 {
+    font-family: "Luckiest Guy", cursive;
+    color: darkblue;
+    font-size: 1.8em;
+}
+
+h3{
+    margin-bottom: 10px;
+    color: #FF3385;
+}
+
+section {
+    padding: 20px;
+    margin: 10px;
+}
+
+.basic {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+#about, #facts {
+    width: 45%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#nutrition {
+    background-color: #f8f8f8;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-radius: 10px;
+}
+
+ul {
+    list-style-type: square;
+    display: inline-block;
+    text-align: left;
+}
+
+/*table css*/
+table {
+    width: 50%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: darkblue;
+    color: rgba(255, 238, 0, 0.931);
+}
+
+/*image ccs*/
+.imgGallery {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.imgGallery img {
+    width: 20%;
+    object-fit: cover;
+}
+
+/*hover css segments*/
+.imgGallery img:hover{
+    transform: scale(1.1);
+}
+
+.basic section:hover{
+    transform: scale(1.005);
+}
+
+#nutrition:hover{
+    transform: scale(1.005);
+}
+
+footer .contactForm button:hover {
+    background-color: rgba(255, 238, 0, 0.931);
+}
+
+/* footer css */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footerDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+footer .logo {
+    flex: 1;
+    min-width: 200px;
+}
+
+footer .footerLogo {
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+footer .info {
+    flex: 2;
+    min-width: 250px;
+    text-align: left;
+    margin-left: 50px;
+}
+
+footer .contactForm {
+    max-width: 700px;
+    text-align: left;
+    margin-right: 50px;
+}
+
+footer .contactForm input,
+footer .contactForm textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 1em;
+}
+
+footer .contactForm button {
+    padding: 10px;
+    background-color: darkblue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
